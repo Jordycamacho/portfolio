@@ -13,7 +13,12 @@ public class MailConfiguration {
     
     @Value("${email.sender}") 
     private String myEmail;
+
+    @Value("${email.password}") 
+    private String myPass;
     
+
+
     @Bean
     public JavaMailSender getJavaMailSender(){
         
@@ -23,7 +28,7 @@ public class MailConfiguration {
         mailSender.setHost("smtp.gmail.com");
         mailSender.setPort(587);
         mailSender.setUsername(myEmail);
-        mailSender.setPassword("kggi bsqn lpps brzw");
+        mailSender.setPassword(myPass);
 
         Properties props = mailSender.getJavaMailProperties();
 

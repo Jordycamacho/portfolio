@@ -1,30 +1,28 @@
 package com.example.porfolio.model;
 
-
 public class Contacto {
-
-	private String nombre;
+   
+	private String asunto;
     private String email;
     private String mensaje;
-    private String asunto;
+
     
     public Contacto() {
         super();
     }
 
-    public Contacto( String nombre, String email, String mensaje,String asunto) {
-
-        this.nombre = nombre;
+    public Contacto(String asunto, String email, String mensaje) {
+        this.asunto = asunto;
         this.email = email;
         this.mensaje = mensaje;
-        this.asunto = asunto;
     }
 
-    public String getNombre() {
-        return nombre;
+    
+    public String getAsunto() {
+        return asunto;
     }
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setAsunto(String asunto) {
+        this.asunto = asunto;
     }
     public String getEmail() {
         return email;
@@ -37,12 +35,6 @@ public class Contacto {
     }
     public void setMensaje(String mensaje) {
         this.mensaje = mensaje;
-    }
-    public String getAsunto() {
-        return asunto;
-    }
-    public void setAsunto(String asunto) {
-        this.asunto = asunto;
     }
 
 }

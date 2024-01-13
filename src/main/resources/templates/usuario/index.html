@@ -10,7 +10,7 @@
             <header>
                 <div class="contenido-header">
                     <h1>nose</h1>
-                  <nav class="" id="nav">
+                    <nav class="" id="nav">
                         <ul id="links">
                             <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
                             <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
@@ -36,14 +36,16 @@
                 <p class="bienvenida">Bienvenidos</p>
                 <h2>Soy <span>Jordy Camacho</span>, desarrollador java</h2>
                 <p class="descripcion">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, blanditiis a. Incidunt consequatur aspernatur nesciunt dolor 
-                    molestias beatae saepe, mollitia vero sunt minus repellendus asperiores doloribus repudiandae officia, explicabo architecto.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, blanditiis a. Incidunt
+                    consequatur aspernatur nesciunt dolor
+                    molestias beatae saepe, mollitia vero sunt minus repellendus asperiores doloribus repudiandae
+                    officia, explicabo architecto.
                 </p>
                 <a href="#portfolio">Ir a Portafolio</a>
             </div>
         </div>
     </section>
-    
+
     <!--SECCION SOBRE MI-->
     <section id="sobremi">
         <div class="contenedor-foto">
@@ -55,8 +57,10 @@
             <h2>Hola Soy <span>Jordy Camacho</span></h2>
             <h3>Desarrollador Java</h3>
             <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis dicta eligendi suscipit tenetur adipisci sit dolore, 
-                aut expedita praesentium saepe, necessitatibus, a repellendus odio nam magni molestiae voluptatum illo modi.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis dicta eligendi suscipit tenetur adipisci
+                sit dolore,
+                aut expedita praesentium saepe, necessitatibus, a repellendus odio nam magni molestiae voluptatum illo
+                modi.
             </p>
             <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum ad suscipit est quod? Soluta
@@ -79,7 +83,8 @@
                     <li>Apps Spring Boot</li>
                 </ul>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quidem commodi a. Commodi quo, voluptatibus aliquam sunt eligendi nam
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quidem commodi a. Commodi quo,
+                    voluptatibus aliquam sunt eligendi nam
                 </p>
             </div>
 
@@ -93,7 +98,8 @@
                     <li>Apps Spring Boot</li>
                 </ul>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quidem commodi a. Commodi quo, voluptatibus aliquam sunt eligendi nam
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quidem commodi a. Commodi quo,
+                    voluptatibus aliquam sunt eligendi nam
                 </p>
             </div>
 
@@ -107,7 +113,8 @@
                     <li>Apps Spring Boot</li>
                 </ul>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quidem commodi a. Commodi quo, voluptatibus aliquam sunt eligendi nam
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quidem commodi a. Commodi quo,
+                    voluptatibus aliquam sunt eligendi nam
                 </p>
             </div>
 
@@ -123,7 +130,8 @@
                     <li>Apps Spring Boot</li>
                 </ul>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quidem commodi a. Commodi quo, voluptatibus aliquam sunt eligendi nam
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quidem commodi a. Commodi quo,
+                    voluptatibus aliquam sunt eligendi nam
                 </p>
             </div>
 
@@ -137,7 +145,8 @@
                     <li>Apps Spring Boot</li>
                 </ul>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quidem commodi a. Commodi quo, voluptatibus aliquam sunt eligendi nam
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quidem commodi a. Commodi quo,
+                    voluptatibus aliquam sunt eligendi nam
                 </p>
             </div>
 
@@ -151,17 +160,18 @@
                     <li>Apps Spring Boot</li>
                 </ul>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quidem commodi a. Commodi quo, voluptatibus aliquam sunt eligendi nam
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quidem commodi a. Commodi quo,
+                    voluptatibus aliquam sunt eligendi nam
                 </p>
             </div>
-            
+
         </div>
     </section>
 
     <!--SECCION HABILIDADES-->
     <div id="skills" class="contenedor-skills">
         <h3>HABILIDADES</h3>
-        
+
         <div class="skill">
             <div class="info">
                 <p><span class="lista"></span>JavaScript</p>
@@ -197,7 +207,7 @@
     <!--SECCION PORFOLIO-->
     <section id="portfolio">
         <h3 class="titulo-seccion">MIS PROYECTOS</h3>
-        
+
         <div class="fila">
             <div class="proyecto">
                 <div class="overlay"></div>
@@ -261,24 +271,25 @@
     <section id="contacto">
         <h3 class="titulo-seccion">Contactame Ahora</h3>
         <div class="contenedor-from">
-            <form th:action="@{/saveC}" method="post">
-                <div class="fila mitad">
-                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
-                    <input type="text" placeholder="Direccion de Email" class="input-mitad">
+            <form th:action="@{/inicio/enviar}" method="post">
+                <div class="fila">
+                    <input type="text" name="email" placeholder="Direccion de Email" class="input-full">
                 </div>
                 <div class="fila">
-                    <input type="text" placeholder="Tema..." class="input-full">
+                    <input type="text" name="asunto" placeholder="Tema..." class="input-full">
                 </div>
                 <div class="fila">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje" class="input-full"></textarea>
+                    <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Tu mensaje"
+                        class="input-full"></textarea>
                 </div>
-                
+
                 <input type="submit" value="Enviar Mensaje" class="btn-enviar">
             </form>
         </div>
     </section>
 
-    <!--SECCION CONTACTO-->
+
+    <!--FOOTER-->
     <footer>
         <p>Jordy 2024</p>
         <div class="redes">
@@ -291,4 +302,5 @@
     <script th:src="@{/js/script.js}"></script>
 
 </body>
+
 </html>

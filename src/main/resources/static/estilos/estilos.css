@@ -436,12 +436,12 @@ html{
 #contacto .contenedor-from .fila{
     margin-bottom: 15px;
 }
-
+/*
 #contacto .contenedor-from .mitad{
     display: flex;
     justify-content: space-between;
 }
-
+*/
 #contacto .contenedor-from input,
 #contacto .contenedor-from  textarea{
     padding: 20px;
