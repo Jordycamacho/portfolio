@@ -22,13 +22,13 @@ public class UsuarioController {
     @Autowired
     private IEmailService emailService;
 
-    @GetMapping("/inicio")
+    @GetMapping("")
     public String inicio() {
 
         return "usuario/index";
     }
 
-    @PostMapping("/inicio/enviar")
+    @PostMapping("/enviar")
     public String save(Contacto contacto, Model model) {
 
         String mycorreo = "jordycamacho225@gmail.com";
